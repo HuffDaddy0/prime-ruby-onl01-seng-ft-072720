@@ -39,10 +39,10 @@ def prime?(num)
 # else false
 # end
 # end
-if num <2
+if num < 2
   false
   if num.odd? || num == 2
-    (3..x).to_a.none? do |test|
+    (3..x - 1).to_a.none? do |test|
       num % test == 0
     end
   end
