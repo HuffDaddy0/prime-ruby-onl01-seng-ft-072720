@@ -41,7 +41,8 @@ def prime?(num)
 # end
 return false if !num.integer?
 return false if num < 2
-  if num.odd? || num == 2
+return true if num == 2
+  if num.odd?
     (3..x - 1).to_a.none? do |tes|
       num % tes == 0
   end
