@@ -48,6 +48,5 @@ return true if num == 2
     end
     else
       false
-  end
 end
 end
