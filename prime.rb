@@ -45,6 +45,7 @@ return true if num == 2
   if num.odd?
     (2..num - 1).to_a.none? do |tes|
       num % tes == 0
+    end
     else
       false
   end
