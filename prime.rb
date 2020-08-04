@@ -28,14 +28,23 @@ def prime?(num)
 #   end
 #   status
 # end
-prime_array = [3, 5, 7, 11, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
-
-if num > 0 && (num.odd? && num != 1)
-  prime_array.any? do |n|
-    num % n == 0
+# prime_array = [3, 5, 7, 11, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
+# 
+# if num > 0 && (num.odd? && num != 1)
+#   prime_array.any? do |n|
+#     num % n == 0
+#   end
+# elsif num == 2
+#   true
+# else false
+# end
+# end
+if num <2
+  false
+  if num.odd || num == 2
+    (3..x).to_a.none? do |test|
+      num % test == 0
+    end
   end
-elsif num == 2
-  true
-else false
 end
-end
+
